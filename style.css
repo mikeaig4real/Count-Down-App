@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    transition: all 0.3s ease-in-out;
+    list-style-type: none;
+    font-family: 'Bangers', cursive;
+    letter-spacing: 2px !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    position: relative;
+    background-image: url(./bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+body::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    background-color: #417668a4;
+}
+
+.container {
+    z-index: 3;
+    color: whitesmoke;
+    max-width: 100%;
+    width: 700px;
+    height: 80%;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    margin-bottom: 0.5rem;
+    font-size: 3rem;
+    color: #244139;
+}
+
+h3 {
+    margin-bottom: 4.5rem;
+    text-shadow: 0 3px 5px #244139;
+}
+
+.timer {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 7rem;
+}
+
+.timer div {
+    height: 100%;
+    position: relative;
+    width: 23%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(216, 208, 208, 0.419);
+    font-size: 4rem;
+    box-shadow: 0 15px 19px 3px  #244139;
+    font-weight: 900;
+}
+
+.timer div:first-child {
+    border-radius: 2rem 0 0 2rem;
+}
+
+.timer div:last-child {
+    border-radius: 0 2rem 2rem 0;
+}
+
+.timer div span {
+    position: absolute;
+    z-index: -9;
+    bottom: -2rem;
+    font-size: 2rem;
+    text-transform: capitalize;
+}
